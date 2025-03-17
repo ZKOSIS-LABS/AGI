@@ -32,7 +32,7 @@ document.body.appendChild(loadingScreen);
 const manager = new THREE.LoadingManager();
 manager.onProgress = (item, loaded, total) => {
   const progress = Math.round((loaded / total) * 100);
-  loadingScreen.innerHTML = `${progress}% <br><br> $AGI`;
+  loadingScreen.innerHTML = `${progress}%`;
 };
 manager.onLoad = () => {
   loadingScreen.style.transition = "opacity 1s";
