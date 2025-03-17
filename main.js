@@ -241,7 +241,7 @@ officeLoader.load(
     // In the office model loading section, replace the additionalLoader part with:
     const additionalLoader = new GLTFLoader(manager);
     additionalLoader.load(
-      "/assets/konngzz.glb", // Updated model path
+      "/assets/konngz.glb", // Updated model path
       (gltf) => {
         const additionalModel = gltf.scene;
         additionalModel.scale.set(1.3, 1.3, 1.3); // Adjust scale if needed
